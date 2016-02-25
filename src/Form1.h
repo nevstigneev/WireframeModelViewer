@@ -161,6 +161,7 @@ namespace oop04 {
 				 String^ str = dlgOpenFile->FileName;
 				 IntPtr ptr = System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(str);
 				 char* path = (char*)ptr.ToPointer();
+				 disp->ClearScene();
 				 if (disp->LoadScene(path))
 				 {
 					 is_scene_loaded = true;

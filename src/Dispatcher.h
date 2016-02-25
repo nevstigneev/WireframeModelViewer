@@ -11,6 +11,7 @@ public:
 	static Dispatcher* Instance();
 
 	bool LoadScene(const char* path);
+	void ClearScene();
 
 	void TranslateCamera(double dx, double dy, double dz, int camera_index);
 	void RotateCamera(double x, double y, double z, double angle, int camera_index);
@@ -20,7 +21,6 @@ public:
 	void ScaleModel(double factor, int model_index);
 
 	void RenderScene(PictureBoxViewport& v, int camera_index);
-
 private:
 	Dispatcher() {};
 	Dispatcher(const Dispatcher& root);

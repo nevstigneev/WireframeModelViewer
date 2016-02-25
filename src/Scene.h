@@ -18,6 +18,9 @@ public:
 	void AddModel(const Model& model);
 	void AddCamera(const Camera& camera);
 
+	void DeleteAllModels();
+	void DeleteAllCamers();
+
 	int ModelsCount() const;
 	int CamersCount() const;
 

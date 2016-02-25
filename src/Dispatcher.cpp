@@ -24,6 +24,12 @@ bool Dispatcher::LoadScene(const char* path)
 	return status;
 }
 
+void Dispatcher::ClearScene()
+{
+	scene.DeleteAllCamers();
+	scene.DeleteAllModels();
+}
+
 void Dispatcher::RotateCamera(double x, double y, double z, double angle, int camera_index)
 {
 	Vertex axis(x, y, z);

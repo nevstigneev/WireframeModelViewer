@@ -40,6 +40,16 @@ void Scene::AddCamera(const Camera& camera)
 	camers.push_back(camera);
 }
 
+void Scene::DeleteAllModels()
+{
+	models.clear();
+}
+
+void Scene::DeleteAllCamers()
+{
+	camers.clear();
+}
+
 int Scene::ModelsCount() const
 {
 	return models.size();
