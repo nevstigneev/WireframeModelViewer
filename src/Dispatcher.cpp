@@ -14,7 +14,7 @@ bool Dispatcher::LoadScene(const char* path)
 	{
 		return false;
 	}
-
+	ClearScene();
 	status = file_manager.LoadScene(scene);
 	if (status)
 	{

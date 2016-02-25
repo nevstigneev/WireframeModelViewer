@@ -161,7 +161,6 @@ namespace oop04 {
 				 String^ str = dlgOpenFile->FileName;
 				 IntPtr ptr = System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(str);
 				 char* path = (char*)ptr.ToPointer();
-				 disp->ClearScene();
 				 if (disp->LoadScene(path))
 				 {
 					 is_scene_loaded = true;
@@ -170,7 +169,7 @@ namespace oop04 {
 				 }
 				 else
 				 {
-					MessageBox::Show("Error. Invalid model.");
+					 MessageBox::Show("Error. Invalid model.");
 				 }
 			 }
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) 

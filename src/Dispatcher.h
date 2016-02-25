@@ -9,7 +9,6 @@ class Dispatcher
 {
 public:
 	static Dispatcher* Instance();
-
 	bool LoadScene(const char* path);
 	void ClearScene();
 

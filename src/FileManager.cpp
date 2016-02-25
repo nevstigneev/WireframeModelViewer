@@ -114,7 +114,6 @@ bool FileManager::LoadScene(Scene& scene)
 {
 	Model m;
 	bool status = true;
-
 	for (int i = 0; i < models_count && status; i++)
 	{
 		status = LoadModel(m);
